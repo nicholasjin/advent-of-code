@@ -24,10 +24,14 @@ def download_inputs():
                 download_day(year, day, filepath)
 
 def download_day(year, day, filepath):
-    url = f"https://adventofcode.com/{year}/day/{day}/input"
-    data = requests.get(url)
-    open(filepath, "wb").write(data.content)
-    print(f"downloading from {url} to {filepath}")
-    time.sleep(1)
+    """
+    NYI (auth is a pain)
+    """
+    pass
+    # url = f"https://adventofcode.com/{year}/day/{day}/input"
+    # data = requests.get(url)
+    # open(filepath, "wb").write(data.content)
+    # print(f"downloading from {url} to {filepath}")
+    # time.sleep(1)
 
 download_inputs()
